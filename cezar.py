@@ -1,4 +1,4 @@
-def szyfruj_cezar(tekst, klucz):
+def szyfrcezar(tekst, klucz):
     zaszyfrowany = ""
     for litera in tekst:
         if litera.isupper():
