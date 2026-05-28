@@ -1,15 +1,18 @@
-from cezar import szyfr_cezar, deszyfruj_cezar
+from vigenere import szyfruj_vigenere
 
 
 def main():
-    tekst = "Szyfrcezar"
-    klucz = 3
-    zaszyfrowany = szyfruj_cezar(tekst, klucz)
-    odszyfrowany = deszyfruj_cezar(zaszyfrowany, klucz)
+    # Dane do testu
+    tekst = "TAJNAWIADOMOSC"
+    klucz = "KLUCZ"
 
-    print(f"Tekst oryginalny: {tekst}")
+    # Wywołanie funkcji z pliku vigenere.py
+    zaszyfrowany = szyfruj_vigenere(tekst, klucz)
+
+    print("--- TEST SZYFRU VIGENERE'A ---")
+    print(f"Tekst jawny: {tekst}")
+    print(f"Klucz: {klucz}")
     print(f"Zaszyfrowany: {zaszyfrowany}")
-    print(f"Odszyfrowany: {odszyfrowany}")
 
 
 if __name__ == "__main__":
